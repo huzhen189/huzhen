@@ -1,0 +1,32 @@
+body{
+	margin: 0px 0px;
+	padding: 0px 0px;
+	background-color: lightgray;
+	margin-top: 90px;
+}
+.bodying{
+	text-align: center;
+}
+.heading{
+	float: none;
+	padding-left: 570px;
+}
+h3{
+	color: #080808;
+	font-family: "黑体";
+
+}
+input{
+	width: 240px;
+	height: 30px;
+}
+input:focus {
+	border-style: solid;
+	border-color: greenyellow;
+}
+
+button{
+	color: #080808;
+	width: 80px;
+	height: 30px;
+}

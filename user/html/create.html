@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/create.css"  type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+	<div class="heading">
+		<p><h3>帐号注册<h3></p>
+	</div>
+	<div class="bodying">
+		<form id="create" action="http://huzhen.eachma.com:80/app/user/create" method="get">
+		    <input class="input" type="text" value="" name="username" placeholder="请输入注册用户">
+			<p><input class="p_input" type="password" value="" name="password1" placeholder="请输入用户密码"></p>
+			<p><input class="p_input" type="password" value="" name="password2" placeholder="请再次输入密码"></p>
+
+			<button type="button" onclick="checkout()">chekout</button>
+		    <button type="button" onclick="javascrtpt:window.location.href='./select.html'">忘记密码</button>
+		</form>
+    </div>
+<script >
+	var checkout=function(){
+		var form=document.getElementById("create")
+		console.log(form)
+		var username=form.username.value
+		var psw1=form.password1.value
+		var psw2=form.password2.value
+		if(username==""){
+			alert("账号不能为空")
+		}
+		else if(psw1==""||psw2==""){
+			alert("密码不能为空")
+		}
+		else if(psw1==psw2){
+				alert("提交成功")
+				form.submit()
+		}
+		else {
+				alert("两次密码不一致")
+		}
+	}
+</script>
+</body>
+</html>
